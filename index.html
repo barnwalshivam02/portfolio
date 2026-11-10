@@ -8,16 +8,20 @@
     <title>Shivam Kumar Barnwal | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <a href="#home" class="logo">Shivam<span>.</span></a>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -25,221 +29,318 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button id="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
     <!-- Home Section -->
-    <section class="home" id="home">
-
+    <section class="home section" id="home">
         <div class="home-content">
             <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
             <h1>Hi, I'm <span>Shivam Kumar Barnwal</span></h1>
 
-            <h2>B.Tech Computer Science Student</h2>
+            <h2>I am a <span id="typing"></span></h2>
 
-            <p class="intro">
-                I am an aspiring Software Developer passionate
-                about Java, Python, SQL and Web Development.
-                I love learning new technologies and solving
-                real-world problems through programming.
+            <p>
+                I am a Computer Science Engineering student who is
+                passionate about programming, web development and
+                learning new technologies.
             </p>
 
             <div class="home-buttons">
                 <a href="#contact" class="btn">Contact Me</a>
 
                 <a href="assets/resume.pdf"
-                   class="btn btn-outline" download>
-                    Download Resume
+                   class="btn btn-outline"
+                   target="_blank">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/barnwalshivam02"
+                   target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shivam-kumar-barnwal/"
+                   target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:barnwalshivam58@gmail.com"
+                   aria-label="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
 
         <div class="home-image">
-            <img src="assets/profile.jpg"
-                 alt="Shivam Kumar Barnwal">
+            <img src="assets/profile.jpg" alt="Shivam's Profile Photo">
         </div>
-
     </section>
 
     <!-- About Section -->
     <section class="section" id="about">
-
         <h2 class="section-title">About <span>Me</span></h2>
 
-        <div class="about-box">
-            <p>
-                Hello! I am Shivam Kumar Barnwal, a B.Tech
-                Computer Science and Engineering student
-                at Meghnad Saha Institute of Technology.
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/profile.jpg" alt="Shivam">
+            </div>
 
-                I have a strong interest in Software Development,
-                Programming and Problem Solving.
+            <div class="about-content">
+                <h3>Computer Science Engineering Student</h3>
 
-                I have knowledge of Java, Python, SQL,
-                HTML and Web Development. I enjoy building
-                projects and improving my technical skills.
-            </p>
+                <p>
+                    Hello! My name is Shivam Kumar Barnwal.
+                    I am currently pursuing B.Tech in Computer
+                    Science and Engineering from Meghnad Saha
+                    Institute of Technology.
+                </p>
+
+                <p>
+                    I have an interest in programming, web development,
+                    software development and problem solving.
+                    I enjoy learning new technologies and building
+                    practical projects.
+                </p>
+
+                <div class="about-details">
+                    <p><strong>Name:</strong> Shivam Kumar Barnwal</p>
+                    <p><strong>Education:</strong> B.Tech CSE</p>
+                    <p><strong>College:</strong> Meghnad Saha Institute of Technology</p>
+                    <p><strong>Graduation:</strong> 2028 (Expected)</p>
+                    <p><strong>Email:</strong> barnwalshivam58@gmail.com</p>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <!-- Education Section -->
     <section class="section" id="education">
-
         <h2 class="section-title">My <span>Education</span></h2>
 
-        <div class="card-container">
+        <div class="timeline">
 
-            <div class="card">
-                <h3>B.Tech in Computer Science</h3>
-                <h4>2028 (Expected)</h4>
+            <div class="timeline-item">
+                <span class="year">2024 - 2028</span>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <h4>Computer Science and Engineering</h4>
                 <p>Meghnad Saha Institute of Technology</p>
-                <p>South 24 Parganas</p>
                 <p>Currently Pursuing</p>
             </div>
 
-            <div class="card">
+            <div class="timeline-item">
+                <span class="year">2023</span>
                 <h3>Higher Secondary (12th)</h3>
-                <h4>2023</h4>
                 <p>UPG +2 High School Dhab Chandwara</p>
-                <p>Koderma, Jharkhand</p>
                 <p>Completed</p>
             </div>
 
         </div>
-
     </section>
 
     <!-- Skills Section -->
     <section class="section" id="skills">
-
         <h2 class="section-title">My <span>Skills</span></h2>
 
         <div class="skills-container">
 
-            <div class="skill">Java Programming</div>
-            <div class="skill">Python Programming</div>
-            <div class="skill">SQL Database</div>
-            <div class="skill">HTML</div>
-            <div class="skill">Web Development</div>
-            <div class="skill">Excel</div>
-            <div class="skill">Problem Solving</div>
-            <div class="skill">Technical Documentation</div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <h3>MS Excel</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Problem Solving</h3>
+            </div>
 
         </div>
-
     </section>
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-
         <h2 class="section-title">My <span>Projects</span></h2>
 
-        <div class="card-container">
+        <div class="projects-container">
 
-            <div class="card project-card">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
                 <h3>E-Commerce Website</h3>
+
                 <p>
-                    A web development project created to
-                    demonstrate my website development
-                    and programming skills.
+                    A website project designed to display products
+                    and provide a simple online shopping experience.
                 </p>
+
+                <span>HTML | CSS | JavaScript</span>
             </div>
 
-            <div class="card project-card">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+
                 <h3>Calculator</h3>
+
                 <p>
-                    A calculator project developed to
-                    practise programming logic and
-                    problem-solving skills.
+                    A calculator application that performs
+                    basic mathematical operations.
                 </p>
+
+                <span>HTML | CSS | JavaScript</span>
             </div>
 
-            <div class="card project-card">
-                <h3>Portfolio Website</h3>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <h3>Personal Portfolio</h3>
+
                 <p>
-                    My personal website to showcase
-                    my education, technical skills
-                    and projects.
+                    A personal portfolio website to showcase
+                    my education, skills, projects and contact details.
                 </p>
+
+                <span>HTML | CSS | JavaScript</span>
             </div>
 
         </div>
-
     </section>
 
     <!-- Certifications Section -->
     <section class="section" id="certifications">
-
         <h2 class="section-title">My <span>Certifications</span></h2>
 
-        <div class="card-container">
+        <div class="certification-container">
 
-            <div class="card">
+            <div class="certification-card">
+                <i class="fas fa-certificate"></i>
                 <h3>C Programming</h3>
-                <p>C in Fundamental</p>
             </div>
 
-            <div class="card">
+            <div class="certification-card">
+                <i class="fas fa-certificate"></i>
                 <h3>C++ Programming</h3>
-                <p>C++ in Fundamental</p>
             </div>
 
-            <div class="card">
-                <h3>Codesoft Internship</h3>
-                <p>Internship</p>
+            <div class="certification-card">
+                <i class="fas fa-award"></i>
+                <h3>CodSoft Internship</h3>
             </div>
 
         </div>
-
     </section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-
         <h2 class="section-title">Contact <span>Me</span></h2>
 
-        <div class="contact-box">
+        <div class="contact-container">
 
-            <p>
-                <strong>Phone:</strong>
-                <a href="tel:9835357446">9835357446</a>
-            </p>
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
 
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:barnwalshivam58@gmail.com">
+                <p>
+                    Feel free to contact me for opportunities,
+                    collaborations or professional discussions.
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
                     barnwalshivam58@gmail.com
-                </a>
-            </p>
+                </p>
 
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/barnwalshivam02"
-                   target="_blank">
-                    Visit My GitHub
-                </a>
-            </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +91 9835357446
+                </p>
 
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/shivam-kumar-barnwal/"
-                   target="_blank">
-                    Visit My LinkedIn
-                </a>
-            </p>
+                <p>
+                    <i class="fab fa-github"></i>
+                    github.com/barnwalshivam02
+                </p>
+            </div>
 
-            <p><strong>Location:</strong> Kolkata, India</p>
+            <form id="contact-form">
+                <input type="text" id="name"
+                       placeholder="Your Name" required>
+
+                <input type="email" id="email"
+                       placeholder="Your Email" required>
+
+                <textarea id="message"
+                          placeholder="Your Message"
+                          rows="6" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </form>
 
         </div>
-
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Shivam Kumar Barnwal | All Rights Reserved</p>
+        <p>
+            Copyright &copy; <span id="year"></span>
+            Shivam Kumar Barnwal.
+            All Rights Reserved.
+        </p>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
